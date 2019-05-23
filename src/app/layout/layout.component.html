@@ -1,0 +1,10 @@
+<div class="nav container center">
+  <h1>Cameron Puckett</h1>
+  <h5>-Photography-</h5>
+  <div><a *ngFor="let link of links" [ngClass]="{active: link.active}" (click)="navigation(link.route)">
+    <i class="material-icons">{{link.i}}</i>
+    <div class="nav-links">{{link.name}}</div>
+  </a>
+  </div>
+</div>
+<router-outlet></router-outlet>

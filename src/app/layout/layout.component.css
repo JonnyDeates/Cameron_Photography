@@ -1,0 +1,44 @@
+a {
+  display: inline-flex;
+  background-color: transparent;
+  cursor: pointer;
+  color: #000;
+}
+i{
+  color: black !important;
+}
+li {
+  cursor: pointer;
+}
+h1{
+  margin: 0;
+}
+h5{
+  font-style: italic;
+  margin: 0 0 1.5rem 0;
+}
+
+.active{
+  animation: pulse;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+.nav {
+  border-bottom: black;
+  border-bottom-width: 2px;
+  border-bottom-style: dotted;
+  width: 100%;
+}
+.nav-links {
+  margin: 0 1rem;
+}
+#logo{
+  max-width: 150px;
+  align-content: center;
+}
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
