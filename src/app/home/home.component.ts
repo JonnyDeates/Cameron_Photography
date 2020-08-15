@@ -7,6 +7,9 @@ import {JRouter} from '../jrouter.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit, AfterViewInit {
+
+  collections: [{src: string, width: number, height: number}];
+
   constructor(private router: JRouter) {
   }
 
